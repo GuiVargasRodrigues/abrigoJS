@@ -14,14 +14,13 @@ function menu() {
 function cadastrarAbrigo() {
   console.log("Opção 1 - Cadastrar abrigo");
 
-  // Solicitar informações sobre o novo abrigo
   let nome = readline.question("Nome do abrigo: ");
   let endereco = readline.question("Endereço do abrigo: ");
   let telefone = readline.question("Telefone do abrigo: ");
   let capacidade = Number(readline.question("Capacidade de lotação do abrigo: "));
   let cidade = readline.question("Cidade do abrigo: ");
 
-  // Criar objeto com as informações do novo abrigo
+  
   let novoAbrigo = {
     nome: nome,
     endereco: endereco,
@@ -30,7 +29,7 @@ function cadastrarAbrigo() {
     cidade: cidade
   };
 
-  // Adicionar novo abrigo ao array de abrigos
+  
   abrigos.push(novoAbrigo);
 
   console.log("Abrigo cadastrado com sucesso!");
